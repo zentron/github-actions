@@ -6,8 +6,8 @@ jobs:
     name: A job to get my version
     steps:
     - uses: actions/checkout@v1
-    - name: Hello world action step
+    - name: Calculate Version
       id: gitversion
       uses: zentron/github-actions@master
-    - name: Get the output time
-      run: echo "The time was ${GITVERSION_NuGetVersionV2} ${{ steps.gitversion.outputs.version }}"
+    - name: Print Version Details
+      run: echo "The time was ${GITVERSION_InformationalVersion} ${{ steps.gitversion.outputs.version }}"
