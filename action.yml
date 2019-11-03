@@ -8,7 +8,7 @@ inputs:
     default: '/repo'
 outputs:
   GITVERSION_NuGetVersionV2:
-    description: 'The time we greeted you'
+    description: 'The time we greeted youx'
 runs:
   using: 'docker'
   image: 'Dockerfile'
