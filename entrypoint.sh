@@ -1,8 +1,11 @@
 #!/bin/bash
 
-ls ./
-ls /
-echo $PWD
+
+ls ./github -a
+ls /github/home -a
+ls /github/workspace -a
+ls /github/workflow -a
+
 GITVERSION="$(dotnet /app/GitVersion.dll ./)"
 
 
