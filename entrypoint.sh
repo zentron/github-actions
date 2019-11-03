@@ -1,6 +1,11 @@
 #!/bin/bash
 
-GITVERSION="$(dotnet /app/GitVersion.dll /github/workspace)"
+GITVERSION="$(dotnet /app/GitVersion.dll /github/home)"
+
+ls /github
+ls /github/home
+ls /github/workspace
+ls /github/workflow
 
 echo $GITVERSION
 
