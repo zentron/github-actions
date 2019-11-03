@@ -8,6 +8,8 @@ function GetComponent {
 	echo $GITVERSION | grep -oP "\""$1'":"?\K([^",]*)'
 }
 
+echo ::set-out name=version::$(GetComponent NuGetVersionV2)
+
 echo ::set-env name=GITVERSION_NuGetVersionV2::$(GetComponent NuGetVersionV2)
 echo ::set-env name=GITVERSION_Major::$(GetComponent Major)
 echo ::set-env name=GITVERSION_Minor::$(GetComponent Minor)
