@@ -10,4 +10,4 @@ jobs:
       id: gitversion
       uses: zentron/github-actions@master
     - name: Print Version Details
-      run: echo "The time was ${GITVERSION_InformationalVersion} ${{ steps.gitversion.outputs.version }}"
+      run: echo "The version is ${GITVERSION_InformationalVersion} ${{ steps.gitversion.outputs.version }}"
