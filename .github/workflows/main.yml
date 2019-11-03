@@ -3,11 +3,11 @@ on: [push]
 jobs:
   getversion_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: A job to get my version
     steps:
     - uses: actions/checkout@v1
     - name: Hello world action step
       id: gitversion
       uses: zentron/github-actions@master
     - name: Get the output time
-      run: echo "The time was ${GITVERS_NuGetVersionV2} ${{ steps.gitversion.outputs.version }}"
+      run: echo "The time was ${GITVERSION_NuGetVersionV2} ${{ steps.gitversion.outputs.version }}"
