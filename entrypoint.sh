@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/sh
 
 GITVERSION="$(dotnet GitVersion.dll /github/workspace)"
 
