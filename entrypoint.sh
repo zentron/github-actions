@@ -1,8 +1,11 @@
 #!/bin/bash
 
+ls ./
+ls /
+echo $PWD
 GITVERSION="$(dotnet /app/GitVersion.dll ./)"
 
-ls ./
+
 
 echo $GITVERSION
 
