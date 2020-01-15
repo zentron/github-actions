@@ -19,3 +19,5 @@ echo ::set-env name=GITVERSION_InformationalVersion::$(GetComponent Informationa
 echo ::set-env name=GITVERSION_PreReleaseTag::$(GetComponent PreReleaseTag)
 echo ::set-env name=GITVERSION_PreReleaseLabel::$(GetComponent PreReleaseLabel)
 echo ::set-env name=GITVERSION_BuildMetaData::$(GetComponent BuildMetaData)
+echo ::set-env name=GITVERSION_AssemblySemVer::$(GetComponent AssemblySemVer)
+echo ::set-env name=GITVERSION_AssemblySemFileVer::$(GetComponent AssemblySemFileVer)
